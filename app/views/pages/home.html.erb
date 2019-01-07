@@ -1,8 +1,12 @@
 <header>
   <h1 class="w100 text-center"><a href="index.html">PAQ search</a></h1>
 </header>
-<div><h1><%= @title %></h1>
-    <%= @thumbnail %>
+<div>
+  <% @items.each do |item| %>
+    <h1><%= item['snippet']['title'] %></h1>
+    <p><%= item['snippet']['description'] %></p>
+    <p><%=image_tag item['snippet']['thumbnails']['high']['url'] %></p>
+  <% end %>
 </div>
 
 <!-- <div class="row">
