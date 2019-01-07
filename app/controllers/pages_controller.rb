@@ -4,8 +4,16 @@ require 'open-uri'
 
 class PagesController < ApplicationController
   def home
+    video = []
     url = open("https://www.googleapis.com/youtube/v3/activities?part=snippet,contentDetails&channelId=UCvO6uJUVJQ6SrATfsWR5_aA&key=#{ENV['API_KEY']}&maxResults=50").read
-    content_array = url['items']
-    @title = content_array[0]['snippet'][0]['title']
+    json = JSON.parse(url)
+    @title = json["items"][0]['snippet']['title']
+    @thumbnail = json["items"][0]['snippet']["thumbnails"]['url']
+    raise
+    # @title = content_array['snippet']['title']
+    # @title.each do |title|
+    #   array << title
+    #   end
+    # raise
   end
 end
