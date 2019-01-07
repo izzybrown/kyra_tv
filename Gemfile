@@ -15,6 +15,7 @@ gem 'sassc-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
+# gem 'google-api-client', '0.9.1', require: ['google/api_client', 'google/api_client', 'google/apis/calendar_v3', 'google/apis/plus_v1']
 
 group :development do
   gem 'web-console', '>= 3.3.0'
