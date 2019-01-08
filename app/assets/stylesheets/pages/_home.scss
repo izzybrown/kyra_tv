@@ -1,52 +1,25 @@
-// Specific CSS for your home-page
-.thumbnail{
-  width: 75vw;
-  border: none;
-  background-color: white;
-  align-items: center;
-}
-
-.title{
-  font-size: 20px;
-  padding-left: 90px;
-}
-
-#body{
-  background-color: white;
-}
-
-// .youtube-container {
-//   display: flex;
-//   justify-content: space-around;
-//   align-items: center;
-// }
-
-.home-wrapper {
-  min-height: 700px;
-  width: 100vw;
-  // margin-left: -5vw;
-  background-color: white;
-  // display: flex;
-  // justify-content: space-around;
-}
-
-.header-title{
-  background-color: white;
-  margin: none;
-}
-
-.text-center{
-  background-color: white;
-}
-
-// .item-card {
-//   display: flex;
-//   fl
-// }
-
 .content {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.video-description{
+    font-size: 15px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 320px;
+    font-family: 'Anton', sans-serif;
+}
+
+.youtube-container{
+  margin: 20px;
+}
+
+.youtube-link{
+  font-family: 'Anton', sans-serif;
+  color: black;
 }
