@@ -8,9 +8,16 @@ google.charts.setOnLoadCallback(drawChart);
         data.addColumn('string', 'Date');
         data.addColumn('number', 'No. of Videos');
         data.addRows([
-          ['Mushrooms', 3],
-          ['Onions', 1],
-          ['Olives', 1],
-          ['Zucchini', 1],
-          ['Pepperoni', 2]
+          ['Week 1', 1],
+          ['Week 2', 2],
+          ['Week 3', 1],
+          ['Week 4', 1],
+          ['Week 5', 1],
         ]);
+
+var options = {'title':'How many PAQ videos were published in Dec 2018',
+                       'width':400,
+                       'height':300};
+var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+chart.draw(data, options);
+      }
