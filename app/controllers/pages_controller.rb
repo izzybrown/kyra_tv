@@ -8,5 +8,6 @@ class PagesController < ApplicationController
     json = JSON.parse(url)
     @items = json['items']
     @image_id = json['items'][0]['contentDetails']['upload']['videoId']
+    @date = json['items'][0]['snippet']['publishedAt']
   end
 end
